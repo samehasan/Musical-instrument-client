@@ -1,0 +1,59 @@
+[
+    {
+      "_id": "1",
+      "name": "John Smith",
+      "image": "https://images.unsplash.com/photo-1504199367641-aba8151af406?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D&w=1000&q=80",
+      "email": "john.smith@example.com",
+      "classTaken": "guitar"
+    },
+    {
+      "_id": "2",
+      "name": "Emily Johnson",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmcT1L8F8dessJMCqd1_4WCGKHq1i0lN9eQ1cgtVG0&s",
+      "email": "emily.johnson@example.com",
+      "classTaken": "piano"
+    },
+    {
+      "_id": "3",
+      "name": "Michael Davis",
+      "image": "https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0LzM5Ny1tY2tpbnNleS0yMWEzMDc0LWppci1ybTUzMF8yLnBuZw.png",
+      "email": "michael.davis@example.com",
+      "classTaken": "drums"
+    },
+    {
+      "_id": "4",
+      "name": "Sarah Thompson",
+      "image": "https://images.unsplash.com/photo-1587590834224-3247f65be147?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+      "email": "sarah.thompson@example.com",
+      "classTaken": "guitar"
+    },
+    {
+      "_id": "5",
+      "name": "David Wilson",
+      "image": "https://www.rri.res.in/sites/default/files/2022-09/Abhisek%20Tamang.jpg",
+      "email": "david.wilson@example.com",
+      "classTaken": "piano"
+    },
+    {
+      "_id": "6",
+      "name": "Jennifer Lee",
+      "image": "https://www.mckinsey.com/~/media/mckinsey/careers%20redesign/meet%20our%20people/profiles/yetunde/yetunde_1132x1224.jpg?mw=1536&car=48:59&cpx=Left&cpy=Top",
+      "email": "jennifer.lee@example.com",
+      "classTaken": "guitar"
+    },
+    {
+      "_id": "7",
+      "name": "Robert Harris",
+      "image": "robert_harris.jpg",
+      "email": "robert.harris@example.com",
+      "classTaken": "drums"
+    },
+    {
+      "_id": "8",
+      "name": "Laura Martinez",
+      "image": "laura_martinez.jpg",
+      "email": "laura.martinez@example.com",
+      "classTaken": "piano"
+    }
+  ]
+  
