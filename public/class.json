@@ -1,0 +1,67 @@
+[
+    {
+      "_id": "1",
+      "image": "https://images.pexels.com/photos/164936/pexels-photo-164936.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "name": "Class 1",
+      "instructor": "John Doe",
+      "availableSeats": 10,
+      "price": 50
+    },
+    {
+      "_id": "2",
+      "image": "class2.jpg",
+      "name": "Class 2",
+      "instructor": "Jane Smith",
+      "availableSeats": 8,
+      "price": 40
+    },
+    {
+      "_id": "3",
+      "image": "class3.jpg",
+      "name": "Class 3",
+      "instructor": "Mike Johnson",
+      "availableSeats": 12,
+      "price": 60
+    },
+    {
+      "_id": "4",
+      "image": "class4.jpg",
+      "name": "Class 4",
+      "instructor": "Emily Brown",
+      "availableSeats": 6,
+      "price": 45
+    },
+    {
+      "_id": "5",
+      "image": "class5.jpg",
+      "name": "Class 5",
+      "instructor": "David Wilson",
+      "availableSeats": 15,
+      "price": 55
+    },
+    {
+      "_id": "6",
+      "image": "class6.jpg",
+      "name": "Class 6",
+      "instructor": "Sarah Thompson",
+      "availableSeats": 9,
+      "price": 35
+    },
+    {
+      "_id": "7",
+      "image": "class7.jpg",
+      "name": "Class 7",
+      "instructor": "Robert Davis",
+      "availableSeats": 14,
+      "price": 70
+    },
+    {
+      "_id": "8",
+      "image": "class8.jpg",
+      "name": "Class 8",
+      "instructor": "Olivia Anderson",
+      "availableSeats": 7,
+      "price": 30
+    }
+  ]
+  

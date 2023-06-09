@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 const NavBar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -7,7 +8,13 @@ const NavBar = () => {
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
+  const { user, logOut } = useContext(AuthContext);
 
+  const handleLogOut = () => {
+      logOut()
+          .then(() => { })
+          .catch(error => console.log(error));
+  }
   const navOptions = (
     <>
       <li>
@@ -17,11 +24,17 @@ const NavBar = () => {
         <Link to="/instructors">Instructors</Link>
       </li>
       <li>
-        <Link to="/order/salad">Classes</Link>
+        <Link to="/classes">Classes</Link>
       </li>
-      <li>
-        {/* Add your cart related code */}
-      </li>
+      {
+            user ? <>
+                <span>{user?.displayName}</span>
+                <button onClick={handleLogOut} className="btn btn-ghost">LogOut</button>
+            </> : <>
+                <li><Link to="/login">Login</Link></li>
+            </>
+        }
+     
     </>
   );
 
