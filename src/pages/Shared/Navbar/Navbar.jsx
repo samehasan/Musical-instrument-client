@@ -26,6 +26,14 @@ const NavBar = () => {
       <li>
         <Link to="/classes">Classes</Link>
       </li>
+      <li>
+        <Link to="/mycart">Mycart</Link>
+      </li>
+      <li>
+            <Link to="/dashboard">
+               DashBoard
+            </Link>
+        </li>
       {
             user ? <>
                 <span>{user?.displayName}</span>
@@ -79,7 +87,7 @@ const NavBar = () => {
           <ul className="menu menu-horizontal px-1">{navOptions}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Get started</a>
+          {/* <a className="btn">Get started</a> */}
         </div>
       </div>
     </>

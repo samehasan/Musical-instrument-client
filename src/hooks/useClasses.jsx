@@ -12,7 +12,7 @@ const useClasses = () => {
                 setLoading(false);
             });
     }, [])
-    return [classes, loading]
+    return [classes, setClasses,loading]
 }
 
 export default useClasses;
