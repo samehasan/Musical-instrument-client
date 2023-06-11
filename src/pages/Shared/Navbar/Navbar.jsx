@@ -26,13 +26,9 @@ const NavBar = () => {
       <li>
         <Link to="/classes">Classes</Link>
       </li>
+     
       <li>
-        <Link to="/mycart">Mycart</Link>
-      </li>
-      <li>
-            <Link to="/dashboard">
-               DashBoard
-            </Link>
+            <Link to="/dashboard/mycart">DashBoard</Link>
         </li>
       {
             user ? <>

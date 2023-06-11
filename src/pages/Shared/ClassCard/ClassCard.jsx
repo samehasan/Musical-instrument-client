@@ -35,7 +35,7 @@ const ClassCard = ({clas}) => {
         }
         else{
             Swal.fire({
-                title: 'Please login to order the food',
+                title: 'Please login first',
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
@@ -56,7 +56,7 @@ const ClassCard = ({clas}) => {
                 <p>{instructor}</p>
                 <p>Class:{price} class</p>
                 <div className="card-actions justify-end">
-                    <button onClick={() => handleAddToCart(clas)} className="btn btn-outline bg-green-800 border-0 border-b-4 border-white-400 mt-4">Add Class</button>
+                    <button onClick={() => handleAddToCart(clas)} className="btn btn-outline bg-yellow-200 border-0 border-b-4 border-red-800 mt-4">Add Class</button>
                 </div>
             </div>
             
