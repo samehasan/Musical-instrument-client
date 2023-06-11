@@ -1,50 +1,46 @@
-
-import { useState } from "react";
-import "./SocialLoginBtn.css";
-import {
-  GoogleAuthProvider,
-  getAuth,
-  signInWithPopup,
-  
-} from "firebase/auth";
-import { app } from "../../firebase/firebase.config";
-import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { FaGoogle } from "react-icons/fa";
+import { AuthContext } from "../../providers/AuthProvider"; 
+import { useLocation, useNavigate } from "react-router-dom";
 
 
 const SocialLoginBtn = () => {
+    const { googleSignIn } = useContext(AuthContext);
     const navigate = useNavigate();
-  const [user, setUser] = useState({});
-  const auth = getAuth(app);
-  const googleProvider = new GoogleAuthProvider();
-  //const githubProvider = new GithubAuthProvider();
+    const location = useLocation();
 
-  const handleGoogleLogin = () => {
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        const user = result.user;
-        setUser(user);
-        console.log(user);
-        navigate('/');
-      })
-      .catch((error) => {
-        const errorMessage = error.message;
-        console.log(errorMessage);
-      });
-  };
+    const from = location.state?.from?.pathname || "/";
 
-  return (
-    <div className=" social-button-container w-50 mt-3">
-      <div className="">
-        <img
-          onClick={handleGoogleLogin}
-          className=" social-button"
-          src="https://i.ibb.co/gSTHXZJ/google-btn.png"
-          alt=""
-        />
-      </div>
-     
-    </div>
-  );
+    const handleGoogleSignIn = () => {
+        googleSignIn()
+            .then(result => {
+                const loggedInUser = result.user;
+                console.log(loggedInUser);
+                const saveUser = { name: loggedInUser.displayName, email: loggedInUser.email }
+                fetch('http://localhost:5000/users', {
+                    method: 'POST',
+                    headers: {
+                        'content-type': 'application/json'
+                    },
+                    body: JSON.stringify(saveUser)
+                })
+                    .then(res => res.json())
+                    .then(() => {
+                        navigate(from, { replace: true });
+                    })
+            })
+    }
+
+    return (
+        <div>
+            <div className="divider"></div>
+            <div className="w-full text-center my-4">
+                <button onClick={handleGoogleSignIn} className="btn btn-circle btn-outline">
+                    <FaGoogle></FaGoogle>
+                </button>
+            </div>
+        </div>
+    );
 };
 
 export default SocialLoginBtn;
