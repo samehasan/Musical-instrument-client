@@ -52,9 +52,9 @@ const ClassCard = ({clas}) => {
         <div className="flex space-x-2">
             <img style={{borderRadius: '50px'}} className="w-[50px]" src={image} alt="" />
             <div>
-                <h3 className="uppercase">{name}----------</h3>
-                <p>{instructor}</p>
-                <p>Class:{price} class</p>
+                <h3 className="uppercase">ClassName:{name}</h3>
+                <p>Instructor Name:{instructor}</p>
+                <p>Fees:{price} Taka</p>
                 <div className="card-actions justify-end">
                     <button onClick={() => handleAddToCart(clas)} className="btn btn-outline bg-yellow-200 border-0 border-b-4 border-red-800 mt-4">Add Class</button>
                 </div>
