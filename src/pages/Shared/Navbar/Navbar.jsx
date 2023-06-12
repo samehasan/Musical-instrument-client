@@ -28,7 +28,7 @@ const NavBar = () => {
       </li>
      
       <li>
-            <Link to="/dashboard/mycart">DashBoard</Link>
+            <Link to="/dashboard">DashBoard</Link>
         </li>
       {
             user ? <>

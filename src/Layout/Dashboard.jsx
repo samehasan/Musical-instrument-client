@@ -1,9 +1,10 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { FaUsers,FaBook,FaShoppingCart, FaWallet, FaCalendarAlt, FaHome,FaSchool } from 'react-icons/fa';
+import useAdmin from "../hooks/useAdmin";
 
 
 const Dashboard = () => {
-   const isAdmin=true;
+   const [isAdmin]=useAdmin() ;
     return (
         <div className="drawer drawer-open ">
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -18,7 +19,7 @@ const Dashboard = () => {
                 {
                         isAdmin ? <>
                             <li><NavLink to="/dashboard/home"><FaHome></FaHome> Admin Home</NavLink></li>
-                            <li><NavLink to="/dashboard/reservations"> <FaSchool></FaSchool>Add Class</NavLink></li>
+                            <li><NavLink to="/dashboard/addclass"> <FaSchool></FaSchool>Add Class</NavLink></li>
                             <li><NavLink to="/dashboard/history"><FaWallet></FaWallet> Manage Class</NavLink></li>
                             <li><NavLink to="/dashboard/history"><FaBook></FaBook> Manage Booked Class</NavLink></li>
                             <li><NavLink to="/dashboard/allusers"><FaUsers></FaUsers> All Users</NavLink></li>
