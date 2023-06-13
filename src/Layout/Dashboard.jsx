@@ -20,11 +20,8 @@ const Dashboard = () => {
         <div className="drawer-side bg-base-300">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
           <ul className="menu p-4 w-80">
-            <li>
-              <NavLink to="/dashboard/home">
-                <FaHome />
-                Admin Home
-              </NavLink>
+          <li>
+              <h1 className="bg-green-700">Welcome As Admin</h1>
             </li>
             <li>
               <NavLink to="/dashboard/manageclass">
@@ -74,11 +71,8 @@ const Dashboard = () => {
         <div className="drawer-side bg-base-300">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
           <ul className="menu p-4 w-80">
-            <li>
-              <NavLink to="/dashboard/home">
-                <FaHome />
-                Instructor Home
-              </NavLink>
+          <li>
+              <h1 className="bg-green-700">Welcome As Instructor</h1>
             </li>
             <li>
               <NavLink to="/dashboard/addclass">
@@ -113,44 +107,37 @@ const Dashboard = () => {
             Open drawer
           </label>
         </div>
-        <div className="drawer-side bg-base-300">
+        <div className="drawer-side bg-green-300">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
           <ul className="menu p-4 w-80">
             <li>
-              <NavLink to="/dashboard/home">
-                <FaHome />
-                User Home
-              </NavLink>
+              <h1 className="text-green-700">Welcome As User</h1>
             </li>
             <li>
-              <NavLink to="/dashboard/reservations">
-                <FaCalendarAlt />
-                Reservations
-              </NavLink>
+             
             </li>
             <li>
-              <NavLink to="/dashboard/history">
-                <FaWallet />
-                Payment History
-              </NavLink>
+              <h1>below ..choose class and pay fees</h1>
             </li>
-            <li>
-              <NavLink to="/dashboard/mycart">
+            <li >
+              <NavLink className="bg-green-700" to="/dashboard/mycart">
                 <FaShoppingCart />
-                My Cart
+                My Selected Class
               </NavLink>
             </li>
             <div className="divider"></div>
+           
             <li>
-              <NavLink to="/">
-                <FaHome />
-                Home
+              <NavLink className="bg-green-700" to="/classes">
+                <FaSchool />
+                Choose from All Classes
               </NavLink>
             </li>
+            <li></li>
             <li>
-              <NavLink to="/classes">
-                <FaSchool />
-                Our Class
+              <NavLink className="bg-green-700" to="/">
+                <FaHome />
+                Home
               </NavLink>
             </li>
           </ul>

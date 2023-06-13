@@ -56,7 +56,7 @@ const ClassCard = ({clas}) => {
                 <p>Instructor Name:{instructor}</p>
                 <p>Fees:{price} Taka</p>
                 <div className="card-actions justify-end">
-                    <button onClick={() => handleAddToCart(clas)} className="btn btn-outline bg-yellow-200 border-0 border-b-4 border-red-800 mt-4">Add Class</button>
+                    <button onClick={() => handleAddToCart(clas)} className="btn btn-outline bg-green-600 border-0 border-b-4 border-red-800 mt-4">Add Class</button>
                 </div>
             </div>
             

@@ -75,7 +75,7 @@ const NavBar = () => {
               {navOptions}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">
+          <a className="btn btn-ghost normal-case text-l">
             Musical Instrument Learning School
           </a>
         </div>
