@@ -24,21 +24,21 @@ const Dashboard = () => {
               <h1 className="bg-green-700">Welcome As Admin</h1>
             </li>
             <li>
+              <h1>You can <br /> Manage Class and Users <br /> as an Admin</h1>
+            </li>
+            <li>
               <NavLink to="/dashboard/manageclass">
                 <FaWallet />
                 Manage Class
               </NavLink>
             </li>
             <li>
-              <NavLink to="/dashboard/history">
-                <FaBook />
-                Manage Booked Class
-              </NavLink>
+             
             </li>
             <li>
               <NavLink to="/dashboard/allusers">
                 <FaUsers />
-                All Users
+                Manage Users
               </NavLink>
             </li>
             <div className="divider"></div>
@@ -49,10 +49,7 @@ const Dashboard = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/classes">
-                <FaSchool />
-                Our Class
-              </NavLink>
+             
             </li>
           </ul>
         </div>

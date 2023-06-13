@@ -14,6 +14,7 @@ const Payment = () => {
         <div>
          
             <h2 className="text-3xl"> Please Pay Your Class Fees Here</h2>
+            <p>For example: <br /> Card Number : 4242 4242 4242 4242 <br /> MM/YY : 12/54 <br /> CVC : 123  <br /> ZIP : 12345</p>
             <Elements stripe={stripePromise}>
                 <CheckoutForm cart={cart} price={price}></CheckoutForm>
             </Elements>

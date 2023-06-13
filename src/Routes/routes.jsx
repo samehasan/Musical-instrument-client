@@ -15,9 +15,13 @@ import AllUsers from "../pages/Dashboard/AllUsers/AllUsers";
 import AddClass from "../pages/Dashboard/AddClass/AddClass";
 import ManageClass from "../pages/Dashboard/ManageClass/ManageClass";
 import Payment from "../pages/Dashboard/Payment/Payment";
+import NotFound from "../pages/NotFound/NotFound";
 
 
 export const router = createBrowserRouter([
+  {path:"*",
+      element:<NotFound></NotFound>,
+    },
     {
       path: "/",
       element: <Main></Main>,

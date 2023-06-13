@@ -46,7 +46,7 @@ const MyCart = () => {
                 <h3 className="text-3xl">Total Class: {cart.length}</h3>
                 <h3 className="text-3xl">Total Fees: ${total}</h3>
                 <Link to="/dashboard/payment">
-                    <button className="btn btn-warning btn-sm">PAY</button>
+                    <button className="btn btn-success ">PAY FEES</button>
                 </Link>
             </div>
             <div className="overflow-x-auto w-full">

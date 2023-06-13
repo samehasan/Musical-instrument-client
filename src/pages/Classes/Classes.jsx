@@ -8,7 +8,7 @@ const Classes = () => {
 
   return (
     <section className="mb-12 text-center">
-      <h1 className="mb-5 text-xl font-bold">All Instructors</h1>
+      <h1 className="mb-5 text-xl font-bold">All Class</h1>
       <div className="grid md:grid-cols-2 gap-10">
         {clas.map(clas => (
           <ClassCard

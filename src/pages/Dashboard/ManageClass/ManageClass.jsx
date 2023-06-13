@@ -51,8 +51,8 @@ const ManageClass = () => {
                             <th>Class</th>
                             <th>Instructor</th>
                             <th>Fees</th>
-                            <th>Update</th>
-                            <th>Delete</th>
+                           
+                            <th>Deny</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -78,11 +78,9 @@ const ManageClass = () => {
                                     {item.instructor}
                                 </td>
                                 <td >${item.price}</td>
+                                
                                 <td>
-                                    <button className="btn btn-ghost btn-xs">details</button>
-                                </td>
-                                <td>
-                                    <button onClick={() => handleDelete(item)} className="btn btn-ghost bg-red-600  text-white"><FaTrashAlt></FaTrashAlt></button>
+                                    <button onClick={() => handleDelete(item)} className="btn btn-ghost bg-red-600  text-white"><FaTrashAlt></FaTrashAlt>DENY</button>
                                 </td>
                             </tr>)
                         }
