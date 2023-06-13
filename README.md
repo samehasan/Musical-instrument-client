@@ -11,6 +11,7 @@ This is A Learning Website.Where you can get many Class.Go check the site .
 * TailwindCSS , daisyUI
 * Framer Motion
 * Dark and light Theme 
+* JWT , Axios , Tanstack query etc
 
 * Assignment12
 * Admin: Email: admin@gmail.com  Pass:@Dmin123
