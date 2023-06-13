@@ -1,8 +1,8 @@
 import { FaTrashAlt } from "react-icons/fa";
 
-import useClasses from "../../../../hooks/useClasses";
+import useClasses from "../../../hooks/useClasses";
 import Swal from "sweetalert2";
-import useAxiosSecure from "../../../../hooks/useAxiosSecure";
+import useAxiosSecure from "../../../hooks/useAxiosSecure";
 
 
 const ManageClass = () => {

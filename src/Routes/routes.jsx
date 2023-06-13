@@ -13,7 +13,7 @@ import MyCart from "../pages/Dashboard/MyCart/MyCart";
 import PrivateRoute from "../Routes/PrivateRoute"
 import AllUsers from "../pages/Dashboard/AllUsers/AllUsers";
 import AddClass from "../pages/Dashboard/AddClass/AddClass";
-import ManageClass from "../pages/Dashboard/AddClass/ManageClass/ManageClass";
+import ManageClass from "../pages/Dashboard/ManageClass/ManageClass";
 
 
 export const router = createBrowserRouter([
