@@ -1,5 +1,4 @@
 
-// import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import ClassCard from "../../Shared/ClassCard/ClassCard";
 import useClasses from "../../../hooks/useClasses";
 
@@ -7,22 +6,16 @@ const PopularClass = () => {
   const [classes] = useClasses();
 
   return (
-
-    
-    <section className="mb-12 text-center ">
-        <h1 className="mb-5 text-xl font-bold">Popular Class</h1>
-      <div className="grid md:grid-cols-2 gap-10">
-        {
-          classes.slice(0, 6).map(clas => (
-            <ClassCard
-              key={clas._id}
-              clas={clas}
-            />
-          ))
-        }
-      </div>
-     
-    </section>
+    <div className="flex justify-center">
+      <section className="w-full max-w-6xl px-4 py-8">
+        <h1 className="text-3xl font-bold mb-6">Popular Classes</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {classes.slice(0, 6).map(clas => (
+            <ClassCard key={clas._id} clas={clas} />
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 

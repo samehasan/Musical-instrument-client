@@ -8,5 +8,9 @@ This is A Learning Website.Where you can get many Class.Go check the site .
 * By Clicking Dashboard you can see your own dashboard according your user role.
 
 
-* TailwindCSS,daisyUI used
+* TailwindCSS , daisyUI
+* Framer Motion
+* Dark and light Theme 
+
 * Assignment12
+* Admin: Email: admin@gmail.com  Pass:@Dmin123
