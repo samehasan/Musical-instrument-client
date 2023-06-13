@@ -1,8 +1,8 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { FaUsers, FaBook, FaShoppingCart, FaWallet, FaCalendarAlt, FaHome, FaSchool } from 'react-icons/fa';
+import { FaUsers,  FaShoppingCart, FaWallet,  FaHome, FaSchool } from 'react-icons/fa';
 import useAdmin from "../hooks/useAdmin";
 import useInstructor from "../hooks/useInstructor";
-
+import { motion } from 'framer-motion';
 const Dashboard = () => {
   const [isAdmin] = useAdmin();
   const [isInstructor] = useInstructor();
@@ -21,7 +21,14 @@ const Dashboard = () => {
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
           <ul className="menu p-4 w-80">
           <li>
-              <h1 className="bg-green-700">Welcome As Admin</h1>
+              <motion.h1
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7 }}
+                className="bg-green-700"
+              >
+                Welcome As Admin
+              </motion.h1>
             </li>
             <li>
               <h1>You can <br /> Manage Class and Users <br /> as an Admin</h1>
@@ -69,7 +76,14 @@ const Dashboard = () => {
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
           <ul className="menu p-4 w-80">
           <li>
-              <h1 className="bg-green-700">Welcome As Instructor</h1>
+              <motion.h1
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7 }}
+                className="bg-green-700"
+              >
+                Welcome As Instructor
+              </motion.h1>
             </li>
             <li>
               <NavLink to="/dashboard/addclass">
@@ -104,11 +118,18 @@ const Dashboard = () => {
             Open drawer
           </label>
         </div>
-        <div className="drawer-side bg-green-300">
+        <div className="drawer-side bg-base-300">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
           <ul className="menu p-4 w-80">
-            <li>
-              <h1 className="text-green-700">Welcome As User</h1>
+          <li>
+              <motion.h1
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7 }}
+                className="bg-green-700"
+              >
+                Welcome As User
+              </motion.h1>
             </li>
             <li>
              
@@ -117,7 +138,7 @@ const Dashboard = () => {
               <h1>below ..choose class and pay fees</h1>
             </li>
             <li >
-              <NavLink className="bg-green-700" to="/dashboard/mycart">
+              <NavLink to="/dashboard/mycart">
                 <FaShoppingCart />
                 My Selected Class
               </NavLink>
@@ -125,14 +146,14 @@ const Dashboard = () => {
             <div className="divider"></div>
            
             <li>
-              <NavLink className="bg-green-700" to="/classes">
+              <NavLink to="/classes">
                 <FaSchool />
                 Choose from All Classes
               </NavLink>
             </li>
             <li></li>
             <li>
-              <NavLink className="bg-green-700" to="/">
+              <NavLink to="/">
                 <FaHome />
                 Home
               </NavLink>
