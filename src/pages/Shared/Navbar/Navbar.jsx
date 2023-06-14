@@ -26,10 +26,12 @@ const NavBar = () => {
       <li>
         <Link to="/classes">Classes</Link>
       </li>
-     
+     {
+      user && 
       <li>
             <Link to="/dashboard">DashBoard</Link>
         </li>
+     }
       {
             user ? <>
                 <span>{user?.displayName}</span>
