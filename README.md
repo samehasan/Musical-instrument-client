@@ -7,11 +7,13 @@ This is A Learning Website.Where you can get many Class.Go check the site .
 * After Login the site you can see classes,All Instructors,Dashboard for 3 different users such as 1.ADMIN,2.INSTRUCTOR,3.STUDENT.
 * By Clicking Dashboard you can see your own dashboard according your user role.
 
-
+# I have used
 * TailwindCSS , daisyUI
-* Framer Motion
-* Dark and light Theme 
 * JWT , Axios , Tanstack query etc
+* Framer Motion (for animation)
+* Stripe (for Payment Gateway)
+* Dark and light Theme 
+
 
 * Assignment12
-* Admin: Email: admin@gmail.com  Pass:@Dmin123
+* Admin:| Email: admin@gmail.com | Pass:@Dmin123
