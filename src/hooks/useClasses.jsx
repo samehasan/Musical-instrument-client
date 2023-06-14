@@ -4,7 +4,7 @@ const useClasses = () => {
     // const [menu, setMenu] = useState([]);
     // const [loading, setLoading] = useState(true);
     // useEffect(() => {
-    //     fetch('http://localhost:5000/menu')
+    //     fetch('https://mils-server-samehasan.vercel.app/menu')
     //         .then(res => res.json())
     //         .then(data => {
     //             setMenu(data);
@@ -15,7 +15,7 @@ const useClasses = () => {
     const {data: classes = [], isLoading: loading, refetch} = useQuery({
         queryKey: ['classes'],
         queryFn: async() => {
-            const res = await fetch('http://localhost:5000/classes');
+            const res = await fetch('https://mils-server-samehasan.vercel.app/classes');
             return res.json();
         }
     })

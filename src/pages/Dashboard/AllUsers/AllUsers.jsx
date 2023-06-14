@@ -16,7 +16,7 @@ const AllUsers = () => {
   const handleMakeAdmin = (user) => {
     setIsButtonDisabled(true);
 
-    fetch(`http://localhost:5000/users/admin/${user._id}`, {
+    fetch(`https://mils-server-samehasan.vercel.app/users/admin/${user._id}`, {
       method: "PATCH",
     })
       .then((res) => res.json())
@@ -39,7 +39,7 @@ const AllUsers = () => {
   const handleMakeInstructor = (user) => {
     setIsButtonDisabled(true);
 
-    fetch(`http://localhost:5000/users/instructor/${user._id}`, {
+    fetch(`https://mils-server-samehasan.vercel.app/users/instructor/${user._id}`, {
       method: "PATCH",
     })
       .then((res) => res.json())
