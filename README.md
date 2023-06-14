@@ -8,7 +8,7 @@ This is A Learning Website.Where you can get many Class.Go check the site .
 * By Clicking Dashboard you can see your own dashboard according your user role.
 
 # I have used
-* TailwindCSS , daisyUI
+* TailwindCSS , daisyUI ,Firebase , MongoDB
 * JWT , Axios , Tanstack query etc
 * Framer Motion (for animation)
 * Stripe (for Payment Gateway)
